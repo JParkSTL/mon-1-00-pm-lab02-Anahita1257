@@ -1,0 +1,8 @@
+numer = int(input("Enter a Numerator: "))
+denom = int(input("Enter a Denominator: "))
+if denom == 0:
+    print("Sorry, you may not divide by zero.")
+answer = int(numer/denom)
+remainder = numer%denom
+print(f"{numer}/{denom} = ", answer, 'Remainder', remainder)
+print("Exiting...")

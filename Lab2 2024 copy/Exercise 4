@@ -1,0 +1,38 @@
+'''
+Author: Jor'Dynn Parker
+KUID: 3075478
+Date: 09/22/2024
+Lab: lab02
+Last modified: Date file was most recently modified
+Purpose: Inpersonate a resturant and print a receipt with items and their prices and give them a discount or not depending on the age.
+'''
+print("==========================")
+print("WELCOME TO THE RESTAURANT")
+print("==========================")
+cold_pasta_cost = 2.50
+grilled_cheese_cost = 5.55
+pie_cost = 3.00
+tax = .08
+age = int(input("What is your age?: "))
+pasta = input("Do you want Cold Pasta?(Y/y):")
+if pasta == 'Y' and 'y':
+    pasta_count = input("How Many?: ")
+grilled_cheese = input("Do you want Grill Cheese?(Y/y):")
+if grilled_cheese == 'Y' and 'y':
+    grilled_cheese_count = input("How Many?: ")
+pie = input("Do you want Pie?(Y/y):")
+if pie == 'Y' and 'y':
+    pie_count = input("How Many?: ")
+subtotal = pasta_count*cold_pasta_cost + grilled_cheese_count*grilled_cheese_cost + pie_count*pie_cost
+
+print(f"{pasta_count} Cold Pasta @ 2.50 ==> {pasta_count*cold_pasta_cost}")
+print(f"{grilled_cheese_count} Grilled Cheese @ 5.55 ==> {grilled_cheese_count*grilled_cheese_cost}")
+print(f"{pie_cost} Pie @ 3.00 ==> {pie_count*pie_cost}")
+
+print(f"Subtotal: {subtotal}")
+print(f"Tax: {tax*subtotal}")
+if age >= 55:
+   discount = subtotal*.55
+print("===========================")
+total = subtotal + tax + discount
+print("Please Come Again!")

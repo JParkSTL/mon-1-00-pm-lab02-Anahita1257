@@ -1,0 +1,15 @@
+'''
+Author: Jor'Dynn Parker
+KUID: 3075478
+Date: 09/22/2024
+Lab: lab02
+Last modified: Date file was most recently modified
+Purpose: Take a given number from the user and divide it equally into programmed categories
+'''
+sodas = int(input("How many Sodas do you have?: "))
+fridge_pack = sodas// 24
+print(f"Fridge Cubes: {fridge_pack}")
+six_pack = sodas // 6 
+print(f"Six Packs: {six_pack}")
+singles = sodas % 6
+print(f"Singles: {singles}")

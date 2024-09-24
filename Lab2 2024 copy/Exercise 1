@@ -1,0 +1,17 @@
+favor = float(input("How much is your team favored by?:" ))
+ishomegame = input('Is it a home game (Y/y?: )')
+bengals = input("Are they the bengals (n/N)?: " )
+if favor >= 7.5 and bengals == 'n' and 'N':
+    print("Advice: SLAM IT!!")
+elif favor > 3 and favor < 7.5 and ishomegame == 'y' and 'Y' and bengals == 'n' and 'N':
+    print("Good Bet")
+elif favor > 3 and favor < 7.5 and ishomegame == 'n' and 'N' and bengals == 'n' and 'N':
+    print("Okay Bet")
+elif favor > 0 and favor < 3 and ishomegame == 'y' and 'Y' and bengals == 'n' and 'N':
+    print("Highly Risky")
+elif favor > 0 and favor < 3 and ishomegame == 'n' and 'N' and bengals == 'n' and 'N':
+    print("Don't Bet")
+elif favor < 0:
+    print("Don't Bet")
+else:
+    print("NO! NO! NO!")
